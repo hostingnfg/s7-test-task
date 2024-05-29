@@ -22,6 +22,11 @@ security:
             stateless: true
             provider: app_user_provider
             security: false
+        doc:
+            pattern: ^/api/doc
+            stateless: true
+            provider: app_user_provider
+            security: false
         main:
             pattern: ^/api
             stateless: true

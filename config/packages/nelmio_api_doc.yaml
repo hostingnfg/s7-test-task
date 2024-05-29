@@ -1,0 +1,14 @@
+nelmio_api_doc:
+    documentation:
+        info:
+            title: 'API Doc'
+            description: 'API documentation for s7-test-task'
+            version: '1.0.0'
+    areas:
+        default:
+            path_patterns:
+                - ^/api
+    models:
+        use_jms: false
+        names:
+            - { alias: App\Entity\User, type: App\Entity\User }
