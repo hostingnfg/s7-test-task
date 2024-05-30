@@ -30,20 +30,7 @@ class UserController extends AbstractController
         $this->security = $security;
         $this->userRepository = $userRepository;
     }
-    /**
-     * @OA\Get(
-     *     path="/api/users",
-     *     summary="Get list of users",
-     *     @OA\Response(
-     *         response=200,
-     *         description="Returns the list of users",
-     *         @OA\JsonContent(
-     *             type="array",
-     *             @OA\Items(ref=@Model(type=User::class, groups={"user:read"}))
-     *         )
-     *     )
-     * )
-     */
+
     #[Route('/api/users', name: 'user_index', methods: ['GET'])]
     public function index(Request $request): JsonResponse
     {

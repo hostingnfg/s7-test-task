@@ -4,6 +4,14 @@ nelmio_api_doc:
             title: 'API Doc'
             description: 'API documentation for s7-test-task'
             version: '1.0.0'
+        components:
+            securitySchemes:
+                bearerAuth:
+                    type: http
+                    scheme: bearer
+                    bearerFormat: JWT
+            security:
+                - bearerAuth: [ ]
     areas:
         default:
             path_patterns:
